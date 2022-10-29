@@ -3,7 +3,7 @@ import cv2
 # NOTE: 顔検出したい画像の読み込み
 faceImg = cv2.imread('./sample-face.png')
 
-# NOTE: 白と黒の2値化処理
+# NOTE: 白と黒のグレースケール
 grayFaceImg = cv2.cvtColor(faceImg, cv2.COLOR_BGR2GRAY)
 cv2.imwrite('./grayFaceImg.jpg', grayFaceImg)
 

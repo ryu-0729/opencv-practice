@@ -2,7 +2,7 @@ import cv2
 
 # NOTE: 検索する画像と検索対象の画像の読み込み
 pokedexImg = cv2.imread('./pokedex.png')
-templetePokemonImg = cv2.imread('./snorlax.png')
+templetePokemonImg = cv2.imread('./diglett.png')
 
 # NOTE: 画像の類似度を取得
 matchRes = cv2.matchTemplate(pokedexImg, templetePokemonImg, cv2.TM_CCOEFF_NORMED)

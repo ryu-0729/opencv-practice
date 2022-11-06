@@ -45,5 +45,5 @@ class CustomCv:
     def multipleRectangles(self, rectanglesImg, imgData):
         """ 複数の対象を四角で囲み出力する処理 """
         for (x, y, w, h) in imgData:
-            rectanglesImg = cv2.rectangle(rectanglesImg, (x, y), (x + w, y + h), (255, 0, 0), 2)
+            cv2.rectangle(rectanglesImg, (x, y), (x + w, y + h), (255, 0, 0), 2)
         return cv2.imwrite(self.__downloadPath, rectanglesImg)

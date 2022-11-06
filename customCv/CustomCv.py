@@ -3,7 +3,7 @@ import cv2
 
 
 @dataclass
-class CustomCommon:
+class CustomCv:
     __filePath: str
     __downloadPath: str
     __grayImgPath: str = ''

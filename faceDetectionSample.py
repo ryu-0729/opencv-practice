@@ -1,8 +1,8 @@
 import sys
-sys.path.append('./common/CustomCommon.py')
-import common.CustomCommon as customCommon
+sys.path.append('./customCv/CustomCommon.py')
+import customCv.CustomCv as customCv
 
-custom = customCommon.CustomCommon('./sample-face.png', './face.jpg', './grayFaceImg.jpg')
+custom = customCv.CustomCv('./sample-face.png', './face.jpg', './grayFaceImg.jpg')
 
 faceImg = custom.imgRead()
 grayFaceImg = custom.grayScale(faceImg)
